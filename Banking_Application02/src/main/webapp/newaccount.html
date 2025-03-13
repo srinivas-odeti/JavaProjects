@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Insert title here</title>
+</head>
+
+<body>
+<div class="header-container">
+		<img src="img\home.jpeg">
+		<h1>BANKING APPLICATION</h1>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="newaccount.html">NEW ACCOUNT</a></li>
+			<li><a href="balance.html">BALANCE</a></li>
+			<li><a href="deposit.html">DEPOSIT</a></li>
+			<li><a href="withdraw.html">WITHDRAW</a></li>
+			<li><a href="transfer.html">TRANSFER</a></li>
+			<li><a href="delete.html">CLOSE A/C</a></li>
+			<li><a href="about.html">ABOUT US</a></li>				
+		</ul>
+	</nav>
+<div class="open-account">
+	<h2>Services</h2>
+	<a href="https://www.youtube.com/">Google</a><br>
+	<a href="www.google.com">Google</a><br>
+	<a href="www.google.com">Google</a><br>
+</div>
+<div class="open-account">
+	
+        <h2>OPEN ACCOUNT FORM</h2>
+        
+        <form name="p1" action="openaccount" method="post" onsubmit="return matchpass()">
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" name="uname" placeholder="Enter your username" required>
+
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="pword" placeholder="Enter your password" required>
+			
+			<label for="repassword">RE-PASSWORD</label>
+            <input type="password" id="repassword" name="repword" placeholder="Re-Enter your password" required>
+            
+            <label for="amount">AMOUNT</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
+            
+            <label for="address">ADDRESS</label>
+            <input type="text" id="password" name="address" placeholder="Enter your address" required>
+            
+            <label for="phone">PHONE</label>
+            <input type="tel" id="phone" name="phn" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+            
+            <input type="submit" value="SUBMIT">
+              
+        </form>
+	
+	
+</div>
+<div class="open-account">
+	
+        
+        <img src="img\welcome.jpg">
+        
+        <p>Welcome to Banking Application – Your Trusted Partner in Banking!
+
+		We are dedicated to providing you with a seamless and secure banking experience. Whether you're opening a new account, managing deposits and withdrawals, or keeping track of your balance, our platform is designed with you in mind.
+
+		Explore a world of financial convenience at your fingertips. With a few clicks, you can:
+
+
+		Our commitment to security ensures that your transactions and personal information are protected at every step. We’re here to support your financial goals and help you make the most of your banking experience.
+
+		Thank you for choosing this bank. Let’s build your financial future together!</p>	
+</div>
+
+<!-- Footer Section -->
+	<footer>
+    <div class="container">
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Email:email@gmail.com</p>
+        <p>Phone:+91 9999999999</p>
+        <p>Address: Hyd</p>
+      </div>
+      <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <p>&copy; 2024 Banking Application. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript">
+	function matchpass()
+	{
+		var pword=document.getElementById("password").value;
+		var repword=document.getElementById("repassword").value;
+		
+		if(pword==repword)
+		{
+			return true;
+		}
+		else
+		{
+			alert("Password must be same!");
+			return false;
+		}
+		
+	}
+	
+	
+</script>
+</html>
